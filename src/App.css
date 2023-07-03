@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
+.logo {
+  height: 20vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome {
+  text-align: start;
+  float: left;
+  margin-left: 6vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+form {
+  position: relative;
+  background: linear-gradient(blue, grey, black);
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 15vw;
+  font-family: lato, sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  width: 30vw;
+  height: 60vh;
+}
+
+form input {
+  line-height: 35px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+form button {
+  margin-bottom: 20px;
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+}
+
+@media screen and (max-width:576px) {
+  .logo {
+    height: 10vmin;
+    pointer-events: none;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .welcome {
+    text-align: start;
+    float: left;
+    margin-left: 4vw;
+    font-size: 14px;
+    width: 35vw;
+  }
+  
+  form {
+    position: relative;
+    background: linear-gradient(blue, grey, black);
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 20vw;
+    font-family: lato, sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    width: 40vw;
+  }
+  
+  form input {
+    line-height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    margin-bottom: 20px;
+    width: 90px;
+    height: 40px;
+    font-size: 14px;
+  }
+  
+}
+
+@media screen and (max-width:460px) {
+  .logo {
+    height: 10vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    text-align: center;
+  }
+  
+  .welcome {
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 14px;
+    width: 70vw;
+  }
+  
+  form {
+    background: linear-gradient(blue, grey, black);
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: lato, sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    width: 60vw;
+  }
+  
+  form input {
+    line-height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: calc(inherit - 20px);
+  }
+  
+  form button {
+    margin-bottom: 20px;
+    width: 90px;
+    height: 40px;
+    font-size: 14px;
   }
 }
